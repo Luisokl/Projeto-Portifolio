@@ -19,9 +19,15 @@ header {
     top: 0;
 }
 header .logo {
-    font-size: 1.75rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #00BFFF;
+}
+header .logo img {
+    margin-right: 20px;
+    width: 60px;
 }
 header .menu {
     width: 40px;
@@ -96,4 +102,47 @@ footer {
     bottom: 0;
     padding: 20px;
     color: #00BFFF;
+}
+
+
+
+
+@media (max-width: 1040px) {
+    header {
+        position: inherit;
+        background-color: #00BFFF;
+    }
+    header .logo {
+        color: #000;
+    }
+    
+    .container {
+        flex-direction: column;
+        height: calc(100vh - 120px);
+    }
+    .container .left-side {
+        flex: none;
+        padding: 30px 0;
+    }
+    .container .left-side .container-info {
+        text-align: center;
+    }
+
+    footer {
+        position: initial;
+    }
+}
+
+@media (max-width: 500px) {
+    .container-info .profession {
+        font-size: 1rem;
+    }
+    .container-info .name {
+        font-size: 3.5rem;
+        line-height: 60px;
+    }
+    .container-info .buttons a {
+        display: block;
+        margin: 15px;
+    }
 }
