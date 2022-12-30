@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Area cabeçalho */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+header .logo {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #00BFFF;
+}
+header .menu {
+    width: 40px;
+    width: 40px;
+}
+header .menu-line {
+    background-color: #000;
+    height: 3px;
+    margin: 5px;
+}
+
+/* Area tela principal */
+
+.container {
+    height: 100vh;
+    display: flex;
+}
+.left-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.right-side {
+    flex: 1;
+    background-color: #00BFFF;
+}
+.container-info {
+    color: #00BFFF;
+}
+.container-info .profession {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.container-info .name {
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 10px 0 30px;
+}
+.container-info .buttons a {
+    display: inline-block;
+    background-color: #00BFFF;
+    color: #FFF;
+    padding: 20px 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px  #111;
+    margin-right: 10px;
+}
+.container-info .buttons a.light {
+    background-color: #FFF;
+    color: #00BFFF;
+    box-shadow: 0 0 5px #111;
+}
+.container-info .buttons a:hover {
+    opacity: 0.7;
+    transition: .2s ease-in-out;
+}
+
+/* Area footer */
+ 
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    color: #00BFFF;
+}
