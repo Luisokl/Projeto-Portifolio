@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Roboto:wght@400;500;700;900&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -12,7 +14,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 15px 40px;
     position: fixed;
     left: 0;
     right: 0;
@@ -23,12 +25,12 @@ header .logo {
     align-items: center;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #00BFFF;
 }
 header .logo img {
     margin-right: 20px;
     width: 60px;
 }
+
 header .menu {
     width: 40px;
     width: 40px;
@@ -55,37 +57,38 @@ header .menu-line {
 
 .right-side {
     flex: 1;
-    background-color: #00BFFF;
+    background-color: #1E90FF;
 }
 .container-info {
-    color: #00BFFF;
+    color: #1E90FF;
 }
 .container-info .profession {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-family: 'Anton', sans-serif;
     text-transform: uppercase;
 }
 .container-info .name {
     font-size: 5rem;
-    font-weight: bold;
-    margin: 10px 0 30px;
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 30px;
 }
+
 .container-info .buttons a {
+    font-family: 'Anton', sans-serif;
     display: inline-block;
-    background-color: #00BFFF;
+    background-color: #1E90FF;
     color: #FFF;
     padding: 20px 50px;
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px  #111;
     margin-right: 10px;
 }
 .container-info .buttons a.light {
     background-color: #FFF;
-    color: #00BFFF;
+    color: #1E90FF;
     box-shadow: 0 0 5px #111;
 }
 .container-info .buttons a:hover {
@@ -93,16 +96,6 @@ header .menu-line {
     transition: .2s ease-in-out;
 }
 
-/* Area footer */
- 
-footer {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 20px;
-    color: #00BFFF;
-}
 
 
 
@@ -126,10 +119,6 @@ footer {
     }
     .container .left-side .container-info {
         text-align: center;
-    }
-
-    footer {
-        position: initial;
     }
 }
 
