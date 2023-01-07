@@ -92,10 +92,43 @@ header .menu-line {
 }
 
 /* Area About */
-
-.container-about {
+.about {
+    background: linear-gradient(172deg,  Dodgerblue 80%, white 7%);
     height: 100vh;
-    background: linear-gradient(to bottom left,  Dodgerblue 65%, white 10%);
+}
+.container-about {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.container-about .about-top h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+    padding: 50px;
+}
+.container-about .about-bottom {
+    display: flex;
+    align-items: center;
+}
+.container-about .about-photograph,
+.container-about  .about-des {
+    flex: 1;
+}
+.about-bottom .about-photograph img{
+    width: 400px;
+    height: auto;
+}
+.about-bottom .about-desc {
+    max-width: 600px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    line-height: 30px;
+    color: #FFF;
 }
 
 
@@ -104,6 +137,14 @@ header .menu-line {
 
 .container-skills {
     height: 100vh;
+}
+.container-skills .skills-title h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #1E90FF;
+    padding: 50px;
 }
  
 
