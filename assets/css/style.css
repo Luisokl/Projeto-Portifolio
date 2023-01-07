@@ -91,7 +91,21 @@ header .menu-line {
     transition: .2s ease-in-out;
 }
 
+/* Area About */
 
+.container-about {
+    height: 100vh;
+    background: linear-gradient(to bottom left,  Dodgerblue 65%, white 10%);
+}
+
+
+
+/* Area Skills */
+
+.container-skills {
+    height: 100vh;
+}
+ 
 
 
 
