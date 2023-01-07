@@ -93,7 +93,7 @@ header .menu-line {
 
 /* Area About */
 .about {
-    background: linear-gradient(172deg,  Dodgerblue 80%, white 7%);
+    background-image: linear-gradient(to left top, #4169e1, #0681ef, #0097f8, #00acfd, #00bfff);
     height: 100vh;
 }
 .container-about {
@@ -114,19 +114,19 @@ header .menu-line {
 .container-about .about-bottom {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-.container-about .about-photograph,
-.container-about  .about-des {
-    flex: 1;
-}
+
 .about-bottom .about-photograph img{
     width: 400px;
     height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 7px 7px rgba(0, 0, 0, .7)
 }
 .about-bottom .about-desc {
     max-width: 600px;
     font-family: 'Inter', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     line-height: 30px;
     color: #FFF;
 }
@@ -150,10 +150,43 @@ header .menu-line {
 
 
 
-@media (max-width: 1040px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container .container-info {
+        max-width: 900px;
+    }
+
+    .container-about .about-top h2 {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    .container-about .about-bottom {
+        justify-content: space-around;
+    }
+    .container-about .about-photograph,
+    .container-about .about-des {
+        max-width: 500px;
+    }
     
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
+    .container-info {
+        max-width: 600px;
+    }
     
+    .container-about .about-top h2 {
+        font-size: 2rem;
+        padding: 20px;
+    }
+
+    .container-about .about-bottom {
+        flex-direction: column;
+    }
+    .about-bottom .about-photograph img {
+        width: 250px;
+    }
+    .about-bottom .about-des {
+        font-size: 1rem;
+    }
 }
