@@ -93,7 +93,7 @@ header .menu-line {
 
 /* Area About */
 .about {
-    background-image: linear-gradient(to left top, #4169e1, #0681ef, #0097f8, #00acfd, #00bfff);
+    background-image: linear-gradient(to left top, #0000ff, #0042ff, #0061ff, #007aff, #1e90ff);
     height: 100vh;
 }
 .container-about {
@@ -146,7 +146,59 @@ header .menu-line {
     color: #1E90FF;
     padding: 50px;
 }
- 
+.container-skills .container-cards {
+    position: relative;
+    width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.container-cards .card {
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, .5);
+    transition: 0.2s ease-in-out;
+    background-color: #FFF;
+} 
+.container-cards .card:hover {
+    height: 420px;
+}
+.container-cards .card .box-img {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+}
+.container-cards .card .box-img img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+.container-cards .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+.container-cards .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px ;
+    transition-delay: 0.3s;
+}
 
 
 
