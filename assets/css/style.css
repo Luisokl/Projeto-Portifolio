@@ -264,9 +264,17 @@ section.projects div  {
     left: 0;
     width: 100%;
     height: 300px;
-    background: url(/assets/images/ondas.png);
+    background: url(/assets/images/ondas2.png);
     background-size: cover;
     background-repeat: no-repeat;
+}
+.container-projects h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+    padding: 50px;
 }
 
 
@@ -434,6 +442,15 @@ section.contact {
     }
     .container-about .about-desc {
         max-width: 400px;
+    }
+    .container-about .about-photograph img {
+        position: relative;
+        top: -20px;
+        left: 40px;
+        max-width: 300px;
+    }
+    .container-about .about-desc {
+        max-width: 500px;
     }
     
 }
